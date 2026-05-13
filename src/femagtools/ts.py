@@ -1321,7 +1321,7 @@ class Losses(object):
 
         Args:
           filename: string Filename of created vtu-file (with extension)
-          methode: string Calculation methode (optional, default="fft")
+          methode: string Calculation method (optional, default="fft")
             methode="fft": use fft to calculate the losses
             methode="time": calculate the losses in time domain
           start: float  Start of the time window (optional)
