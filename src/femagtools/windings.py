@@ -4,7 +4,7 @@
 Conventions
 
 - Number of slots: Q
-- Numper of pole pairs: p
+- Number of pole pairs: p
 - Number of phases: m
 - Number of layers: l
 - Number of wires per slot side: n
