@@ -1,0 +1,545 @@
+-- generated from DXF by femagtools 1.9.5
+exit_on_error = false
+exit_on_end = false
+verbosity = 2
+
+new_model_force("IPM-130-4","Test")
+global_unit(mm)
+pickdist(0.001)
+cosys(polar)
+
+dy1 = 130.00003059029285
+da1 = 69.99999565274845
+dy2 = 9.999997918623865
+da2 = 67.00000615579663
+ag  = (da1 - da2)/2
+
+m.tot_num_slot   = 12
+m.num_sl_gen     = 3
+m.num_poles      = 4
+m.num_pol_pair   = m.num_poles/2
+m.num_slots      = m.num_sl_gen
+m.npols_gen      = m.num_poles * m.num_sl_gen / m.tot_num_slot
+m.tot_num_sl     = m.tot_num_slot
+m.fc_radius      = (da1+da2)/4
+m.fc_radius1     = m.fc_radius
+m.arm_length     = 1.0
+pre_models("basic_modpar")
+
+m.airgap         = 2*ag/3
+m.nodedist       = 1.0
+agndst           = 0.5274487735582274
+mcvkey_teeth = 'dummy'
+mcvkey_yoke = 'dummy'
+mcvkey_shaft = 'dummy'
+ur = 1000.0
+ndt(agndst)
+
+ndt(1.1*agndst)
+
+nc_circle_m(35.000002480218335, 4.999999811042182e-07, 34.16457271770759, 7.601457215921796, -0.00028362206268184314, -3.069930625088091e-05, 0)
+nc_circle_m(33.388114980523106, 10.499235908951185, 30.310889112493502, 17.500004276273394, -0.00026061414592959414, -0.00011656593068209987, 0)
+nc_line(33.3881105, 10.499234499999998, 35.319964500000005, 11.016873499999999, 0)
+nc_line(34.1645695, 7.6014564999999985, 36.0964235, 8.1190945, 0)
+nc_line(35.319964500000005, 11.016873499999999, 35.739253500000004, 9.576305499999998, 0)
+nc_line(36.0964235, 8.1190945, 35.739253500000004, 9.576305499999998, 0)
+nc_line(35.000002, 0.0, 39.0000002, 0.0, 0)
+nc_line(30.310889, 17.500004, 33.77499, 19.5000028, 0)
+nc_line(35.440692500000004, 14.720469499999998, 35.319964500000005, 11.016873499999999, 0)
+nc_line(38.0527755, 4.972051499999999, 36.0964235, 8.1190945, 0)
+
+ndt(1.4*agndst)
+
+nc_circle_m(35.94016149249315, 15.553915513002348, 35.440690345253444, 14.720469570238945, 36.44015834399414, 14.687889599121089, 0)
+nc_circle_m(38.052772226173566, 4.972049464825113, 38.9020494999995, 4.500001632495456, 38.90204570361328, 5.500000499999999, 0)
+nc_line(38.902049, 4.500002, 41.6416204, 4.500001800000001, 0)
+nc_line(35.940161, 15.553916, 38.3126996, 16.9237018, 0)
+nc_line(39.0000002, 0.0, 42.9999984, 0.0, 0)
+nc_line(33.77499, 19.5000028, 37.239091, 21.5000016, 0)
+
+ndt(1.7*agndst)
+
+nc_line(41.6416204, 4.500001800000001, 44.381191799999996, 4.5000016, 0)
+nc_line(38.3126996, 16.9237018, 40.6852382, 18.2934876, 0)
+
+ndt(2.0*agndst)
+
+nc_line(42.9999984, 0.0, 46.9999966, 0.0, 0)
+nc_line(37.239091, 21.5000016, 40.703192, 23.5000004, 0)
+nc_line(44.381191799999996, 4.5000016, 47.1207632, 4.5000014, 0)
+nc_line(40.6852382, 18.2934876, 43.0577768, 19.6632734, 0)
+
+ndt(2.3*agndst)
+
+nc_line(47.1207632, 4.5000014, 49.8603346, 4.5000012, 0)
+nc_line(43.0577768, 19.6632734, 45.430315400000005, 21.0330592, 0)
+nc_line(46.9999966, 0.0, 50.9999948, 0.0, 0)
+nc_line(40.703192, 23.5000004, 44.167293, 25.4999992, 0)
+nc_line(49.8603346, 4.5000012, 52.599906, 4.500001, 0)
+nc_line(45.430315400000005, 21.0330592, 47.802854, 22.402845, 0)
+
+ndt(2.5*agndst)
+
+nc_line(50.9999948, 0.0, 54.999993, 0.0, 0)
+nc_line(44.167293, 25.4999992, 47.631394, 27.499998, 0)
+nc_circle_m(52.59990650000064, 4.5000013344798795, 54.58480027737508, 6.745281472489486, 52.59989879199219, 6.500000499999999, 0)
+nc_circle_m(50.64446357646234, 21.450824108827682, 47.80285448252504, 22.402845530267747, 48.80284831591797, 20.670792125976558, 0)
+
+ndt(2.8*agndst)
+
+nc_circle_m(54.9999927891719, 0.0, 54.584799999999994, 6.745281, 0.0, 0.0, 0)
+nc_circle_m(54.58480386547093, 6.745281915888978, 53.125920370226, 14.235051465227432, -0.0011367135410296216, -0.00019042112779743547, 0)
+nc_circle_m(53.12592037014527, 14.235051465205236, 50.64446419685216, 21.450824371599882, -0.0010792739884095677, -0.0004047887088631797, 0)
+nc_circle_m(50.644464, 21.450824, 47.63139393398753, 27.499998109664805, 0.0, 0.0, 0)
+nc_line(56.999997400000005, 0.0, 54.999993, 0.0, 0)
+nc_line(49.363447, 28.5000016, 47.631394, 27.499998, 0)
+nc_line(53.12592, 14.235051, 55.0577738, 14.7526898, 0)
+nc_line(59.00000180000001, 0.0, 56.999997400000005, 0.0, 0)
+nc_line(51.0955, 29.500005200000004, 49.363447, 28.5000016, 0)
+nc_line(55.0577738, 14.7526898, 56.9896276, 15.270328600000001, 0)
+
+ndt(3.1*agndst)
+
+nc_line(61.0000062, 0.0, 59.00000180000001, 0.0, 0)
+nc_line(52.827553, 30.500008800000003, 51.0955, 29.500005200000004, 0)
+nc_line(56.9896276, 15.270328600000001, 58.921481400000005, 15.7879674, 0)
+
+ndt(3.4*agndst)
+
+nc_line(58.921481400000005, 15.7879674, 60.853335200000004, 16.3056062, 0)
+nc_line(63.0000106, 0.0, 61.0000062, 0.0, 0)
+nc_line(54.559606, 31.500012400000003, 52.827553, 30.500008800000003, 0)
+nc_line(60.853335200000004, 16.3056062, 62.785189, 16.823245, 0)
+nc_line(65.000015, 0.0, 63.0000106, 0.0, 0)
+nc_line(56.291659, 32.500016, 54.559606, 31.500012400000003, 0)
+
+ndt(3.7*agndst)
+
+nc_circle_m(59.852554531368924, 25.35097708973115, 56.291659099534435, 32.50001626879187, -7.156771954441865e-05, 7.753664596066301e-05, 0)
+nc_circle_m(65.00001529514643, 4.999996685334278e-07, 64.50932004172302, 7.97169844336799, -2.2851741789509102e-05, -0.00010427378964550368, 0)
+nc_circle_m(64.5093210975005, 7.971698573834882, 62.78518932668021, 16.82324545355917, 0.0004390842552197683, 0.00014764896678798323, 0)
+nc_circle_m(62.78518932671514, 16.823245453568376, 59.85255551096448, 25.3509775046441, 0.0004544419973058212, 9.033325096652334e-05, 0)
+
+
+-- parts      = 12
+-- num_slots  = 12
+-- min_radius = 34.999997826374226
+-- max_radius = 65.00001529514643
+-- min_corner = 35.000002, 0.0
+-- max_corner start = 65.000015, 0.0
+
+
+-- create air layer outside
+x0, y0 = 65.000015, 0.0
+hair = 1.0
+parts = 12
+rmax = 65.00001529514643
+r1 = rmax + hair
+r, phi = c2pr(x0, y0)
+x1, y1 = pr2c(r1, phi)
+x2, y2 = pr2c(r1, 2*math.pi/parts)
+-- end max corner (np.float64(56.291659), np.float64(32.500016))
+-- center [0.0, 0.0]
+r2 = 65.0000147151717
+x3, y3 = pr2c(r2, 2*math.pi/parts)
+nc_line(x0, y0, x1, y1, 0)
+nc_circle_m(x1, y1, x2, y2, 0.0, 0.0, 0)
+nc_line(x2, y2, x3, y3, 0)
+x0, y0 = pr2c(rmax + hair/2, math.pi/parts/2)
+create_mesh_se(x0, y0)
+
+
+outer_da_start = 35.000002
+outer_da_end = 35.00000188529048
+xmag = {}
+ymag = {}
+mag_orient = {}
+
+
+mag_exists = 0
+if mcvkey_yoke == nil then
+  mcvkey_yoke = "dummy"
+  ur = 1000.0
+ else if mcvkey_teeth == nil then
+ mcvkey_teeth = mcvkey_yoke
+end
+end
+x0_iron_tooth, y0_iron_tooth = 0.0, 0.0
+x0_iron_yoke, y0_iron_yoke = 0.0, 0.0
+x0_shaft, y0_shaft = 0.0, 0.0
+
+
+x0, y0 = 44.8068734283782, 4.05954725
+create_mesh_se(x0, y0)
+def_new_subreg(x0, y0, "StZa", "skyblue")
+x0_iron_tooth, y0_iron_tooth = x0, y0
+x0, y0 = 44.34972099802562, 13.585396312995705
+create_mesh_se(x0, y0)
+rcoil_1 = 36.99826204021296, 55.00000095819333
+m.xcoil_1, m.ycoil_1 = x0, y0
+x0, y0 = 37.40829187767167, 18.9996163048324
+create_mesh_se(x0, y0)
+add_to_subreg(x0, y0, "StZa")
+x0_iron_tooth, y0_iron_tooth = x0, y0
+x0, y0 = 59.40319649215671, 8.411622726779585
+create_mesh_se(x0, y0)
+def_new_subreg(x0, y0, "StJo", "lightblue")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+x0, y0 = 55.221779678604136, 23.367533634395933
+create_mesh_se(x0, y0)
+add_to_subreg(x0, y0, "StJo")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+create_mesh()
+
+if x0_iron_yoke > 0.0 then
+  if mcvkey_yoke ~= 'dummy' then
+    def_mat_fm_nlin(x0_iron_yoke, y0_iron_yoke, "blue", mcvkey_yoke, 100)
+  else
+    def_mat_fm(x0_iron_yoke, y0_iron_yoke, ur, 100)
+  end
+end
+
+if x0_iron_tooth > 0.0 then
+  if(x0_iron_yoke == 0 and mcvkey_yoke ~= 'dummy') then
+    def_mat_fm_nlin(x0_iron_tooth, y0_iron_tooth, 'blue', mcvkey_yoke, 100)
+  else
+    if (mcvkey_teeth ~= 'dummy' and mcvkey_teeth ~= nil) then
+      def_mat_fm_nlin(x0_iron_tooth, y0_iron_tooth, 'blue', mcvkey_teeth, 100)
+    else
+      def_mat_fm(x0_iron_tooth, y0_iron_tooth, ur, 100)
+    end
+  end
+end
+
+if x0_shaft > 0.0 then
+  if mcvkey_shaft ~= 'dummy' then
+    def_mat_fm_nlin(x0_shaft, y0_shaft, "lightgrey", mcvkey_shaft, 100)
+  else
+    def_mat_fm(x0_shaft, y0_shaft, ur, 100)
+  end
+end
+
+m.wdg_location  = 1 -- stator
+
+parts_gen = m.num_sl_gen
+alfa = 0.5235987755982988
+
+-- rotate
+x1, y1 = 35.000002, 0.0
+x2, y2 = pr2c(r1, 0.0)
+x3, y3 = pr2c(r1, 2*math.pi/parts)
+x4, y4 = 30.310889, 17.500004
+if parts_gen > 1 then
+  rotate_copy_nodechains(x1,y1,x2,y2,x3,y3,x4,y4,parts_gen-1)
+end
+alfa = parts_gen * alfa
+
+mcvkey_teeth = 'dummy'
+mcvkey_yoke = 'dummy'
+mcvkey_shaft = 'dummy'
+ndt(agndst)
+
+ndt(1.1*agndst)
+
+nc_circle_m(23.68807822549919, 23.688079225499006, 4.999998189889663e-07, 33.50000307789831, -1.2607193468738842e-05, -2.7439677239726738e-05, 0)
+nc_circle_m(33.50000207789869, 4.999998461866504e-07, 23.688078225499012, 23.688079225499184, -2.843967723720198e-05, -1.16071934712636e-05, 0)
+nc_line(23.688078, 23.688079, 22.6041678, 22.604168599999998, 0)
+nc_line(4.479944500000001, 32.0571105, 1.6515175000000013, 32.3686295, 0)
+nc_line(32.0571095, 4.479944499999998, 32.3686285, 1.6515174999999986, 0)
+nc_line(0.0, 33.500003, 0.0, 30.3253424, 0)
+nc_line(33.500002, 0.0, 30.3253416, 0.0, 0)
+nc_line(22.6041678, 22.604168599999998, 21.5202576, 21.520258199999997, 0)
+nc_line(4.479945, 32.05711, 7.927090499999999, 28.60996425, 0)
+nc_line(32.05711, 4.479944, 28.60996425, 7.9270897499999995, 0)
+nc_line(1.6515175000000013, 29.2286835, 1.6515175000000013, 32.3686295, 0)
+nc_line(29.2286825, 1.6515174999999986, 32.3686285, 1.6515174999999986, 0)
+nc_line(1.6515175000000013, 29.2286835, 4.479944500000001, 32.0571105, 0)
+nc_line(29.2286825, 1.6515174999999986, 32.0571095, 4.479944499999998, 0)
+
+ndt(1.4*agndst)
+
+nc_line(21.5202576, 21.520258199999997, 20.4363474, 20.4363478, 0)
+nc_line(0.0, 30.3253424, 0.0, 27.1506818, 0)
+nc_line(30.3253416, 0.0, 27.1506812, 0.0, 0)
+nc_line(7.927090499999999, 28.60996425, 11.374236, 25.1628185, 0)
+nc_line(28.60996425, 7.9270897499999995, 25.1628185, 11.3742355, 0)
+nc_line(20.4363474, 20.4363478, 19.352437199999997, 19.3524374, 0)
+nc_line(1.651518, 29.228684, 5.0986635, 25.781538, 0)
+nc_line(29.228682, 1.651517, 25.781536499999998, 5.09866275, 0)
+
+ndt(1.7*agndst)
+
+nc_line(11.374236, 25.1628185, 14.821381499999998, 21.71567275, 0)
+nc_line(25.1628185, 11.3742355, 21.71567275, 14.821381249999998, 0)
+nc_line(19.352437199999997, 19.3524374, 18.268527, 18.268527, 0)
+nc_line(14.821381499999998, 21.71567275, 18.268527, 18.268527, 0)
+nc_line(21.71567275, 14.821381249999998, 18.268527, 18.268527, 0)
+nc_line(0.0, 27.1506818, 0.0, 23.976021199999998, 0)
+nc_line(27.1506812, 0.0, 23.9760208, 0.0, 0)
+nc_line(5.0986635, 25.781538, 8.545809, 22.334392, 0)
+nc_line(25.781536499999998, 5.09866275, 22.334391, 8.5458085, 0)
+
+ndt(2.0*agndst)
+
+nc_line(8.545809, 22.334392, 11.9929545, 18.887245999999998, 0)
+nc_line(22.334391, 8.5458085, 18.8872455, 11.992954249999999, 0)
+nc_line(0.0, 23.976021199999998, 0.0, 20.8013606, 0)
+nc_line(23.9760208, 0.0, 20.8013604, 0.0, 0)
+nc_line(11.9929545, 18.887245999999998, 15.4401, 15.4401, 0)
+nc_line(18.8872455, 11.992954249999999, 15.4401, 15.4401, 0)
+
+ndt(2.3*agndst)
+
+nc_line(12.46395878398139, 12.463958783981388, 15.440100249999995, 15.440100249999997, 0)
+nc_line(0.0, 20.8013606, 0.0, 17.6267, 0)
+nc_line(20.8013604, 0.0, 17.6267, 0.0, 0)
+
+ndt(2.5*agndst)
+
+nc_circle_m(17.626699553165746, 3.8151935732616125e-07, 12.46395878398139, 12.463958783981388, 0.0, 0.0, 0)
+nc_circle_m(12.46395878398139, 12.463958783981388, 1.0793240593658259e-15, 17.62669955316575, 0.0, 0.0, 0)
+nc_line(0.0, 15.101360199999998, 0.0, 17.6267, 0)
+nc_line(15.10136, 2e-07, 17.6267, 0.0, 0)
+nc_line(10.678273999999998, 10.678273999999998, 12.463959, 12.463959, 0)
+
+ndt(2.8*agndst)
+
+nc_line(0.0, 12.5760204, 0.0, 15.101360199999998, 0)
+nc_line(12.57602, 4e-07, 15.10136, 2e-07, 0)
+nc_line(8.892589, 8.892589, 10.678273999999998, 10.678273999999998, 0)
+
+ndt(3.1*agndst)
+
+nc_line(0.0, 10.0506806, 0.0, 12.5760204, 0)
+nc_line(10.05068, 6e-07, 12.57602, 4e-07, 0)
+nc_line(7.106904, 7.106904, 8.892589, 8.892589, 0)
+nc_line(0.0, 7.5253408, 0.0, 10.0506806, 0)
+nc_line(5.321219, 5.321219, 7.106904, 7.106904, 0)
+nc_line(7.52534, 8e-07, 10.05068, 6e-07, 0)
+
+ndt(3.4*agndst)
+
+nc_line(0.0, 5.000001, 0.0, 7.5253408, 0)
+nc_line(3.535534, 3.535534, 5.321219, 5.321219, 0)
+nc_line(5.0, 1e-06, 7.52534, 8e-07, 0)
+
+ndt(3.7*agndst)
+
+nc_circle_m(4.999999678812369, 5.00000140289606e-07, 3.5355335963779266, 3.535533596377801, -7.95058059566145e-06, -3.4581209433781623e-06, 0)
+nc_circle_m(3.535533596378324, 3.535533596378391, -4.999998585527741e-07, 5.000000678812366, -4.458120940853405e-06, -6.950580598186207e-06, 0)
+
+
+-- parts      = 4
+-- min_radius = 4.999998959311933
+-- max_radius = 33.50000307789831
+-- min_corner = 5.0, 1e-06
+-- max_corner start = 33.500002, 0.0
+
+
+inner_da_start = 33.500002
+inner_da_end = 33.500003
+parts = 4
+x0, y0 = 5.0, 1e-06
+r1, phi = c2pr(x0, y0)
+xmag = {}
+ymag = {}
+mag_orient = {}
+
+
+mag_exists = 0
+if mcvkey_yoke == nil then
+  mcvkey_yoke = "dummy"
+  ur = 1000.0
+ else if mcvkey_teeth == nil then
+ mcvkey_teeth = mcvkey_yoke
+end
+end
+x0_iron_tooth, y0_iron_tooth = 0.0, 0.0
+x0_iron_yoke, y0_iron_yoke = 0.0, 0.0
+x0_shaft, y0_shaft = 0.0, 0.0
+
+
+x0, y0 = 16.854313275641022, 16.854314
+create_mesh_se(x0, y0)
+xmag[1], ymag[1] = x0, y0
+mag_orient[1] = 0.7853981452665062
+x0, y0 = 18.268526736062306, 22.98198093093985
+create_mesh_se(x0, y0)
+def_new_subreg(x0, y0, "Iron", "skyblue")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+x0, y0 = 28.014697205430608, 11.844039612749592
+create_mesh_se(x0, y0)
+add_to_subreg(x0, y0, "Iron")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+x0, y0 = 11.36012357876844, 6.231979582750372
+create_mesh_se(x0, y0)
+add_to_subreg(x0, y0, "Iron")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+x0, y0 = 5.290558287386037, 10.581116574772071
+create_mesh_se(x0, y0)
+add_to_subreg(x0, y0, "Iron")
+x0_iron_yoke, y0_iron_yoke = x0, y0
+create_mesh()
+
+if x0_iron_yoke > 0.0 then
+  if mcvkey_yoke ~= 'dummy' then
+    def_mat_fm_nlin(x0_iron_yoke, y0_iron_yoke, "blue", mcvkey_yoke, 100)
+  else
+    def_mat_fm(x0_iron_yoke, y0_iron_yoke, ur, 100)
+  end
+end
+
+if x0_iron_tooth > 0.0 then
+  if(x0_iron_yoke == 0 and mcvkey_yoke ~= 'dummy') then
+    def_mat_fm_nlin(x0_iron_tooth, y0_iron_tooth, 'blue', mcvkey_yoke, 100)
+  else
+    if (mcvkey_teeth ~= 'dummy' and mcvkey_teeth ~= nil) then
+      def_mat_fm_nlin(x0_iron_tooth, y0_iron_tooth, 'blue', mcvkey_teeth, 100)
+    else
+      def_mat_fm(x0_iron_tooth, y0_iron_tooth, ur, 100)
+    end
+  end
+end
+
+if x0_shaft > 0.0 then
+  if mcvkey_shaft ~= 'dummy' then
+    def_mat_fm_nlin(x0_shaft, y0_shaft, "lightgrey", mcvkey_shaft, 100)
+  else
+    def_mat_fm(x0_shaft, y0_shaft, ur, 100)
+  end
+end
+
+mag_exists   = 1
+mag_mirrored = false
+mag_alpha    = 1.5707963267948966
+
+parts_gen = m.npols_gen
+alfa = 1.5707963267948966
+
+-- rotate
+x1, y1 = pr2c(r1, 0.0)
+x2, y2 = 33.500002, 0.0
+x3, y3 = 0.0, 33.500003
+x4, y4 = pr2c(r1, 2*math.pi/parts)
+if parts_gen > 1 then
+  rotate_copy_nodechains(x1,y1,x2,y2,x3,y3,x4,y4,parts_gen-1)
+end
+alfa = parts_gen * alfa
+
+-- pm magnets
+if mag_exists > 0 then
+  if( m.remanenc == nil ) then
+     m.remanenc = 1.15
+     m.relperm  = 1.05
+  end
+  if( m.orient == nil ) then
+    m.orient = m.parallel
+  end
+  if( m.magncond == nil ) then
+    m.magncond = 625000.0
+  end
+  if( m.rlen == nil ) then
+    m.rlen = 100
+  end
+  for i=0, m.npols_gen-1 do
+    for n=1, mag_exists do
+      r, p = c2pr(xmag[n], ymag[n])
+      x0, y0 = pr2c(r, i*mag_alpha+p)
+      phi = (i*mag_alpha+mag_orient[n])*180/math.pi
+      if ( i % 2 == 0 ) then
+        phi = phi - 0
+        color = "red"
+      else
+        phi = phi - 0 + 180
+        color = "green"
+      end
+      if(m.mcvkey_magnet == nil) then
+        def_mat_pm(x0, y0, color, m.remanenc, m.relperm,
+                   phi, m.orient, m.magncond, m.rlen)
+      else
+        def_mat_pm_nlin(x0, y0, color, m.mcvkey_magnet,
+                 phi, m.orient, m.magncond, m.rlen)
+      end
+      if mag_mirrored then
+        x0, y0 = pr2c(r, (i+1)*mag_alpha-p)
+        phi = ((i+1)*mag_alpha-mag_orient[n])*180/math.pi
+        if ( i % 2 == 0 ) then
+          phi = phi - 0
+        else
+          phi = phi - 0 + 180
+        end
+        if(m.mcvkey_magnet == nil) then
+          def_mat_pm(x0, y0, color, m.remanenc, m.relperm,
+                       phi, m.orient, m.magncond, m.rlen)
+        else
+          def_mat_pm_nlin(x0, y0, color, m.mcvkey_magnet,
+                   phi, m.orient, m.magncond, m.rlen)
+        end
+      end
+    end
+  end
+end
+-- airgap
+ndt(agndst)
+r1 = m.fc_radius - ag/6
+x1, y1 = pr2c(r1, alfa)
+n = math.floor(m.fc_radius*alfa/agndst + 1.5)
+nc_circle_m(r1, 0, x1, y1, 0.0, 0.0, n)
+
+r2 = m.fc_radius + ag/6
+x2, y2 = pr2c(r2, alfa)
+nc_circle_m(r2, 0, x2, y2, 0.0, 0.0, n)
+
+if inner_da_start == nil then
+  inner_da_start = da2/2
+end
+x1, y1 = pr2c(inner_da_start, 0.0)
+nc_line(x1, y1, r1, 0.0, 0.0)
+
+if outer_da_start == nil then
+  outer_da_start = da1/2
+end
+x2, y2 = pr2c(outer_da_start, 0.0)
+nc_line(r2, 0.0, x2, y2, 0.0)
+
+if m.tot_num_slot > m.num_sl_gen then
+  if inner_da_end == nil then
+    inner_da_end = inner_da_start
+  end
+  x3, y3 = pr2c(inner_da_end, alfa)
+  x4, y4 = pr2c(r1, alfa)
+  nc_line(x3, y3, x4, y4, 0, 0)
+
+  if outer_da_end == nil then
+    outer_da_end = outer_da_start
+  end
+  x3, y3 = pr2c(outer_da_end, alfa)
+  x4, y4 = pr2c(r2, alfa)
+  nc_line(x3, y3, x4, y4, 0, 0)
+end
+
+x0, y0 = pr2c(r1-ag/6, alfa/2)
+create_mesh_se(x0, y0)
+x0, y0 = pr2c(r2+ag/6, alfa/2)
+create_mesh_se(x0, y0)
+
+connect_models()
+
+-- Gen_winding
+if m.xcoil_1 ~= nil then
+  m.num_phases      = 3
+  m.num_layers      = 1
+  m.num_wires       = 1
+  m.coil_span       = 3
+  m.current         = 0.0
+  m.mat_type        = 1.0 -- rotating
+  m.wind_type       = 1.0 -- winding & current
+  m.win_asym        = 1.0 -- sym
+  m.wdg_location    = 1.0 -- stator
+  m.curr_inp        = 0.0 -- const
+  m.dq_offset       = 0
+  pre_models("Gen_winding")
+  pre_models("gen_pocfile")
+end
+
+save_model(cont)
