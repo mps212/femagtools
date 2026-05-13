@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
 """analyze windings
 
- Conventions
+Conventions
 
- Number of slots: Q
- Numper of pole pairs: p
- Number of phases: m
- Number of layers: l
- Number of wires per slot side: n
- Number of slots per pole and phase: q = Q/p/2/m
- Number of coils per phase: c = Q * l/2/m
- Number of parallel circuits (coil groups): g
- Number of turns per phase: w1 = Q * n * l/2/m/g
+- Number of slots: Q
+- Numper of pole pairs: p
+- Number of phases: m
+- Number of layers: l
+- Number of wires per slot side: n
+- Number of slots per pole and phase: q = Q/p/2/m
+- Number of coils per phase: c = Q * l/2/m
+- Number of parallel circuits (coil groups): g
+- Number of turns per phase: w1 = Q * n * l/2/m/g
 
 Refs:
-odd number of phases
- doi:10.1007/s00502-021-00873-6
-even number of phases
- doi:10.1049/iet-epa.2020.0553
+
+- odd number of phases: doi:10.1007/s00502-021-00873-6
+- even number of phases: doi:10.1049/iet-epa.2020.0553
 """
 import numpy as np
 import femagtools.bch

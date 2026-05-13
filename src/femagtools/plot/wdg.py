@@ -1,10 +1,4 @@
-"""
-    femagtools.plot.wdg
-    ~~~~~~~~~~~~~~~~~~~
-
-    Creating winding plots
-
-"""
+"""Creating winding plots."""
 import numpy as np
 import matplotlib.pyplot as plt
 import logging
@@ -12,9 +6,10 @@ import logging
 
 def currdist(wdg, title='', k='all', phi=0, ax=0):
     """plot current distribution  of winding
+
     Arguments:
-          k: (int) winding key (all if 0 or 'all', default all)
-          phi: (float) current angle (default 0)
+      k: (int) winding key (all if 0 or 'all', default all)
+      phi: (float) current angle (default 0)
     """
     if ax == 0:
         ax = plt.gca()
@@ -32,7 +27,8 @@ def currdist(wdg, title='', k='all', phi=0, ax=0):
 
 def mmf(f, title='', ax=0):
     """plot magnetomotive force (mmf) of winding
-    Arguments
+
+    Arguments:
       f: (dict) windings mmf
       title: (str) plot title
     """

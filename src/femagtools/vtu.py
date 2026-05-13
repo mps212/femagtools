@@ -94,9 +94,9 @@ class Reader(object):
     def set_time_window(self, start, end):
         '''Set time window
 
-        Args
+        Args:
           start: float Start of the time window
-        end: float End of the time window
+          end: float End of the time window
 
         Only values within the time window are output by the functions
             get_field_vector

@@ -1321,11 +1321,11 @@ class Losses(object):
 
         Args:
           filename: string Filename of created vtu-file (with extension)
-        methode: string Calculation methode (optional, default="fft")
+          methode: string Calculation methode (optional, default="fft")
             methode="fft": use fft to calculate the losses
             methode="time": calculate the losses in time domain
-        start: float  Start of the time window (optional)
-        end : float  End of the time window (optional)
+          start: float  Start of the time window (optional)
+          end : float  End of the time window (optional)
 
         Returns:
           The losses density in each element is calculated and stored in a vtu-file.
