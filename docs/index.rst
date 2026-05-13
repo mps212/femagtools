@@ -77,6 +77,7 @@ User Guide
    :maxdepth: 2
 
    intro
+   funktionshandbuch
    femag
    models
    sizing
@@ -88,7 +89,6 @@ User Guide
    engine
    amela
    tspost
-..
    API reference <_autosummary/femagtools>
 
 Indices and tables

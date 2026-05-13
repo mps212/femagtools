@@ -143,6 +143,7 @@ class ParameterStudy(object):
                  extra_files=[], num_samples=0,
                  data_model_created=False):
         """calculate objective vars for all decision vars
+
         Args:
           opt: variation parameter dict (decision_vars, objective_vars)
           machine: parameter dict of machine
@@ -150,9 +151,9 @@ class ParameterStudy(object):
           engine: calculation runner (MultiProc, Condor ..)
           bchMapper: bch result transformation function
           extra_files: list of additional input file names to be copied
-          num_samples: number of samples (ingored with Grid sampling)
-          data_model_created: model and complete data structur
-                              was already created before calling this function
+          num_samples: number of samples (ignored with Grid sampling)
+          data_model_created: model and complete data structure
+              was already created before calling this function
         """
 
         self.stop = False  # make sure the calculation will start. thomas.maier/OSWALD
